@@ -7,7 +7,7 @@ function getEven(arr) {
 
         Write you code below
     */
-   let result = [];
+   var result = [];
    for (ele of arr){
        if(ele%2===0){
            result.push(ele);
@@ -25,7 +25,7 @@ function multiplyByN(arr, n) {
             Output: [3,9,13,165]
         Write you code below
     */
-   let res = [];
+   var res = [];
    for(ele of arr){
        res.push(ele*n);
    }
