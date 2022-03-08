@@ -44,23 +44,7 @@ function removeNthElement(arr, n) {
    arr.splice(n, 1);
    return arr
 }
-function getEven(arr) 
-{
-    function isdiv(n)
-    {
-        return n % 2==0
-    }
-    var result = arr.filter(isdiv)
-    return result
-}
-function multiplyByN(arr, n) {
-    function muln(num)
-    {
-       return num * n
-    }
-    arr = arr.map(muln)
-    return arr
-}
+
 
 module.exports = {
     getEven,
