@@ -37,12 +37,29 @@ function removeNthElement(arr, n) {
     /*
         Return the array with the element present at index n removed
         Example
-            Input: [1,3,4,6,7] 3
+            Input: [1,3,4,6,7] 3       
             Output: [1,3,4,7]
         Write you code below
     */
    arr.splice(n, 1);
    return arr
+}
+function getEven(arr) 
+{
+    function isdiv(n)
+    {
+        return n % 2==0
+    }
+    var result = arr.filter(isdiv)
+    return result
+}
+function multiplyByN(arr, n) {
+    function muln(num)
+    {
+       return num * n
+    }
+    arr = arr.map(muln)
+    return arr
 }
 
 module.exports = {
