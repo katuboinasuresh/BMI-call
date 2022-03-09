@@ -7,6 +7,13 @@ function getEven(arr) {
 
         Write you code below
     */
+   var result = [];
+   for (ele of arr){
+       if(ele%2===0){
+           result.push(ele);
+       }
+   }
+   return result
 
 }
 
@@ -18,17 +25,26 @@ function multiplyByN(arr, n) {
             Output: [3,9,13,165]
         Write you code below
     */
+   var res = [];
+   for(ele of arr){
+       res.push(ele*n);
+   }
+   return res
+
 }
 
 function removeNthElement(arr, n) {
     /*
         Return the array with the element present at index n removed
         Example
-            Input: [1,3,4,6,7] 3
+            Input: [1,3,4,6,7] 3       
             Output: [1,3,4,7]
         Write you code below
     */
+   arr.splice(n, 1);
+   return arr
 }
+
 
 module.exports = {
     getEven,
